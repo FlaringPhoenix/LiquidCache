@@ -1,0 +1,22 @@
+{
+  "name": "liquidcache",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FlaringPhoenix/LiquidCache.git"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "node ./tests"
+  },
+  "author": "FlaringPhoenix, Pellucid",
+  "license": "MIT",
+  "homepage": "https://github.com/FlaringPhoenix/LiquidCache#readme",
+  "dependencies": {
+    "viall": "^1.2.0"
+  }
+}
