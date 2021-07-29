@@ -1,6 +1,7 @@
 # LiquidCache
-
 LiquidCache is an easy to setup map based caching system. You can also configure how often the cache is reset.
+
+![](https://img.shields.io/github/stars/BlueFox-Development/LiquidCache) ![](https://img.shields.io/github/forks/BlueFox-Development/LiquidCache) ![](https://img.shields.io/github/issues/BlueFox-Development/LiquidCache) ![](https://img.shields.io/github/license/BlueFox-Development/LiquidCache) ![](https://img.shields.io/discord/870418236078960791)
 
 # Installation
 
