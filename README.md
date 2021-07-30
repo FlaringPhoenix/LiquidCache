@@ -61,7 +61,11 @@ Cache.settings({
 // Gets cache settings
 Cache.getSettings();
 ```
-
+# Support
+Need some help configuring LiquidCache or got an issue?<br/>
+Join BlueFox Development's Discord
+> [https://discord.gg/KHbBfWSdnZ](https://discord.gg/KHbBfWSdnZ)
+ 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
