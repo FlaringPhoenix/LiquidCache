@@ -15,7 +15,7 @@
   },
   "author": "FlaringPhoenix, Pellucid",
   "license": "MIT",
-  "homepage": "https://github.com/FlaringPhoenix/LiquidCache#readme",
+  "homepage": "https://github.com/BlueFox-Development/LiquidCache#readme",
   "dependencies": {
     "viall": "^1.2.0"
   }
