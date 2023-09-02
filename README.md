@@ -1,3 +1,4 @@
+[![CodeQL](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql.yml/badge.svg)](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql.yml)
 ![npm](https://img.shields.io/npm/v/liquidcache)
 ![license](https://img.shields.io/github/license/BlueFox-Development/LiquidCache)
 
