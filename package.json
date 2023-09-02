@@ -11,12 +11,12 @@
     "test": "tests"
   },
   "scripts": {
-    "test": "node ./tests"
+    "test": "mocha"
   },
-  "author": "FlaringPhoenix, Pellucid",
+  "author": "FlaringPhoenix",
   "license": "MIT",
   "homepage": "https://github.com/FlaringPhoenix/LiquidCache#readme",
-  "dependencies": {
-    "viall": "^1.2.0"
+  "devDependencies": {
+    "mocha": "^10.2.0"
   }
 }
