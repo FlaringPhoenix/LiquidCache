@@ -1,21 +1,28 @@
+![npm](https://img.shields.io/npm/v/liquidcache)
+![license](https://img.shields.io/github/license/BlueFox-Development/LiquidCache)
+
 # LiquidCache
-![](https://img.shields.io/github/stars/BlueFox-Development/LiquidCache) ![](https://img.shields.io/github/forks/BlueFox-Development/LiquidCache) ![](https://img.shields.io/github/issues/BlueFox-Development/LiquidCache) ![](https://img.shields.io/github/license/BlueFox-Development/LiquidCache) ![](https://img.shields.io/discord/870418236078960791)
 
-# About
-LiquidCache is an easy to setup map based caching system. You can also configure how often the cache is reset.
+LiquidCache is an easy-to-setup map-based caching system for Node.js. It allows you to store key-value pairs in memory and configure cache expiration intervals.
 
-# Installation
+## Features
 
-Run the following command to install the npm package
+- In-memory storage of key-value pairs.
+- Configurable cache expiration intervals.
+- Easy-to-use API for setting, getting, and deleting cache entries.
+
+## Installation
+
+Install LiquidCache using npm:
 
 ```bash
-npm i liquidcache
+npm install liquidcache
 ```
 
 ## Usage
 
-### Basic Usage:
-```javascript
+### Simple Usage:
+```js
 const Cache = require('liquidcache');
 
 Cache.set('name', 'FlaringPhoenix');
@@ -23,53 +30,39 @@ Cache.delete('name');
 ```
 
 ### Advanced Usage:
-#### Deletes from cache after 5000ms
-```javascript
+Set a Cache Entry with an Expiration Time
+```js
 const Cache = require('liquidcache');
 
-Cache.settings({
-    debug: true,
-    deletionInterval: 0,
-});
-
+Cache.setInterval(5000);
 Cache.set('name', 'FlaringPhoenix', 5000);
 ```
 
-### Methods:
-```javascript
-// Sets in cache
-Cache.get('name', 'FlaringPhoenix');
+## Methods
+```js
+// Set a value in the cache
+Cache.set('name', 'FlaringPhoenix');
 
-// Removes from cache
+// Remove a value from the cache
 Cache.delete('name');
 
-// Gets everything in cache
+// Get all entries in the cache
 Cache.getAll();
 
-// Gets cache size
-Cache.size();
-
-// Clears cache
+// Clear the entire cache
 Cache.removeAll();
 
-// Updates cache settings
-Cache.settings({
-    debug: true,
-    deletionInterval: 0,
-}]);
-
-// Gets cache settings
-Cache.getSettings();
+// Update cache settings
+Cache.setInterval();
 ```
-# Support
-Need some help configuring LiquidCache or got an issue?<br/>
-Join BlueFox Development's Discord
-> [https://discord.gg/KHbBfWSdnZ](https://discord.gg/KHbBfWSdnZ)
- 
+
+## Support
+Need help configuring LiquidCache or encountering an issue? Please open an issue [here](https://github.com/FlaringPhoenix/LiquidCache/issues/new).
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
+Please make sure to update the tests as appropriate.
 
 ## License
-[MIT](https://choosealicense.com/licenses/mit/)
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/FlaringPhoenix/LiquidCache/blob/master/LICENSE) file for details.
