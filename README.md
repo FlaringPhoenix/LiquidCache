@@ -1,16 +1,17 @@
-[![CodeQL](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql.yml/badge.svg)](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql-analysis.yml)
 ![npm](https://img.shields.io/npm/v/liquidcache)
-![license](https://img.shields.io/github/license/BlueFox-Development/LiquidCache)
+![license](https://img.shields.io/github/license/FlaringPhoenix/LiquidCache)
 
 # LiquidCache
 
-LiquidCache is an easy-to-setup map-based caching system for Node.js. It allows you to store key-value pairs in memory and configure cache expiration intervals.
+LiquidCache is an easy-to-setup, map-based caching system for Node.js, written in TypeScript. It allows you to store key-value pairs in memory and configure cache expiration intervals for optimized data retrieval.
 
 ## Features
 
-- In-memory storage of key-value pairs.
-- Configurable cache expiration intervals.
-- Easy-to-use API for setting, getting, and deleting cache entries.
+- In-memory storage of key-value pairs for fast access.
+- Configurable cache expiration intervals to ensure data freshness.
+- Type-safe operations due to TypeScript integration.
+- Straightforward API for managing cache data.
 
 ## Installation
 
@@ -22,48 +23,43 @@ npm install liquidcache
 
 ## Usage
 
-### Simple Usage:
-```js
-const Cache = require('liquidcache');
+Make sure to compile the TypeScript to JavaScript before using LiquidCache:
 
-Cache.set('name', 'FlaringPhoenix');
-Cache.delete('name');
+```bash
+npm run build
 ```
 
-### Advanced Usage:
-Set a Cache Entry with an Expiration Time
-```js
-const Cache = require('liquidcache');
+Here's how you can use LiquidCache in your TypeScript code:
 
-Cache.setInterval(5000);
-Cache.set('name', 'FlaringPhoenix', 5000);
-```
+```ts
+import { LiquidCache } from 'liquidcache';
 
-## Methods
-```js
+// Create a new cache instance
+const cache = new LiquidCache<string>();
+
 // Set a value in the cache
-Cache.set('name', 'FlaringPhoenix');
+cache.set('name', 'FlaringPhoenix');
+
+// Retrieve a value from the cache
+const value = cache.get('name'); // 'FlaringPhoenix'
 
 // Remove a value from the cache
-Cache.delete('name');
+cache.delete('name');
 
-// Get all entries in the cache
-Cache.getAll();
+// Set a value in the cache with an expiration time (in milliseconds)
+cache.set('name', 'FlaringPhoenix', 5000);
 
-// Clear the entire cache
-Cache.removeAll();
-
-// Update cache settings
-Cache.setInterval();
+// After 5 seconds, 'name' will be automatically removed from the cache
 ```
 
 ## Support
-Need help configuring LiquidCache or encountering an issue? Please open an issue [here](https://github.com/FlaringPhoenix/LiquidCache/issues/new).
+
+If you need help with configuring or using LiquidCache, please open an issue [here](https://github.com/FlaringPhoenix/LiquidCache/issues/new).
 
 ## Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update the tests as appropriate.
+Contributions are welcome! For significant changes, please open an issue first to discuss what you would like to change. Don't forget to update tests as necessary.
 
 ## License
+
 This project is licensed under the MIT License - see the [LICENSE](https://github.com/FlaringPhoenix/LiquidCache/blob/master/LICENSE) file for details.
