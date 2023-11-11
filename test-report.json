@@ -1,0 +1,98 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 5,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-11T23:23:26.678Z",
+    "end": "2023-11-11T23:23:26.769Z",
+    "duration": 91
+  },
+  "tests": [
+    {
+      "title": "should set and get a cache entry",
+      "fullTitle": "LiquidCache should set and get a cache entry",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect cache expiration",
+      "fullTitle": "LiquidCache should respect cache expiration",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 71,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should override an existing key",
+      "fullTitle": "LiquidCache should override an existing key",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should delete a cache entry",
+      "fullTitle": "LiquidCache should delete a cache entry",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should clear all cache entries",
+      "fullTitle": "LiquidCache should clear all cache entries",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ],
+  "pending": [],
+  "failures": [],
+  "passes": [
+    {
+      "title": "should set and get a cache entry",
+      "fullTitle": "LiquidCache should set and get a cache entry",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 5,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should respect cache expiration",
+      "fullTitle": "LiquidCache should respect cache expiration",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 71,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should override an existing key",
+      "fullTitle": "LiquidCache should override an existing key",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should delete a cache entry",
+      "fullTitle": "LiquidCache should delete a cache entry",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 0,
+      "currentRetry": 0,
+      "err": {}
+    },
+    {
+      "title": "should clear all cache entries",
+      "fullTitle": "LiquidCache should clear all cache entries",
+      "file": "/home/brenny/LiquidCache/test/LiquidCache.spec.ts",
+      "duration": 1,
+      "currentRetry": 0,
+      "err": {}
+    }
+  ]
+}
