@@ -13,3 +13,4 @@ jobs:
         with:
           name: test-results
           path: test-report.json
+      - run: npx gts lint src/
