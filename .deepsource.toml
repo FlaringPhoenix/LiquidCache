@@ -1,13 +1,6 @@
 version = "1.0"
 
 [[analyzers]]
-name = "javascript"
-enabled = true
-
-  [analyzers.meta]
-  environment = ["mocha"]
-
-[[analyzers]]
 name = "typescript"
 enabled = true
 
@@ -15,5 +8,5 @@ enabled = true
   environment = ["mocha"]
   
 [[test_patterns]]
-pattern = "test/**/*.ts"
+pattern = "test/*.ts"
 name = "mocha"
