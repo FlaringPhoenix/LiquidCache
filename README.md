@@ -1,4 +1,5 @@
 [![CodeQL](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql-analysis.yml)
+[![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 ![npm](https://img.shields.io/npm/v/liquidcache)
 ![license](https://img.shields.io/github/license/FlaringPhoenix/LiquidCache)
 
