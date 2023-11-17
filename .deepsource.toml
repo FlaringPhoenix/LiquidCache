@@ -6,7 +6,7 @@ enabled = true
 
   [analyzers.meta]
   environment = ["mocha"]
-  
+
 [[test_patterns]]
 pattern = "test/*.ts"
 name = "mocha"
