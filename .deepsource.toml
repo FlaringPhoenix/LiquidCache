@@ -5,3 +5,14 @@ name = "javascript"
 
   [analyzers.meta]
   environment = ["mocha"]
+
+[[analyzers]]
+name = "typescript"
+enabled = true
+
+  [analyzers.meta]
+  environment = ["mocha"]
+  
+[[test_patterns]]
+pattern = "test/**/*.ts"
+name = "mocha"
