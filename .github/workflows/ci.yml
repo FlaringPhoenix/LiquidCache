@@ -2,7 +2,8 @@ name: 'CI'
 on:
   pull_request:
 jobs:
-  build-test:
+  build-and-test:
+    name: 'Build and Test'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3         # checkout the repo
@@ -13,4 +14,12 @@ jobs:
         with:
           name: test-results
           path: test-report.json
+
+  format-check:
+    name: 'GTS Compliance'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3         # checkout the repo
+      - run: npm ci                       # install packages
+      # - run: npx gts check-format         # check formatting
       - run: npx gts lint src/
