@@ -1,7 +1,8 @@
-version = 1
+version = "1.0"
 
 [[analyzers]]
 name = "javascript"
+enabled = true
 
   [analyzers.meta]
   environment = ["mocha"]
