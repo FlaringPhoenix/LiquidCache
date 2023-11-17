@@ -13,6 +13,10 @@ jobs:
           node-version: '20.x'
           registry-url: 'https://registry.npmjs.org'
       - run: npm ci
+      - name: Download a single artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: npm-package
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

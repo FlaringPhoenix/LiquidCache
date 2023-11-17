@@ -2,7 +2,7 @@ name: Release
 on:
   push:
     branches:
-      - master
+      - production
 
 permissions:
   contents: read # for checkout
@@ -34,3 +34,9 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         run: npx semantic-release
+      - name: 'Upload NPM release Artifact'
+        uses: actions/upload-artifact@v3
+        with:
+          name: npm-package
+          path: *.tgz
+          retention-days: 14
