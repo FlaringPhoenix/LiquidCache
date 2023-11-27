@@ -1,6 +1,6 @@
 version = 1
 
-test_patterns = "test/*.ts"
+test_patterns = ["test/*.ts"]
 
 [[analyzers]]
 name = "typescript"
