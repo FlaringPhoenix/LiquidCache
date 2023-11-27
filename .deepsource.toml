@@ -1,18 +1,12 @@
-version = 1
+version = "1.0"
 
-[[analyzers]]
-name = "javascript"
-
-  [analyzers.meta]
-  environment = ["mocha"]
+test_patterns = "test/*.ts"
 
 [[analyzers]]
 name = "typescript"
 enabled = true
 
   [analyzers.meta]
-  environment = ["mocha"]
-  
-[[test_patterns]]
-pattern = "test/**/*.ts"
-name = "mocha"
+  environment = ["nodejs", "mocha"]
+  module_system = "es-modules"
+  style_guide = "google"

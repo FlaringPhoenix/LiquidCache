@@ -1,4 +1,5 @@
-[![CodeQL](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql-analysis.yml)
+[![CodeQL](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql.yml/badge.svg)](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/codeql.yml)
+[![Latest Build](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/ci.yml/badge.svg)](https://github.com/FlaringPhoenix/LiquidCache/actions/workflows/ci.yml)
 [![Code Style: Google](https://img.shields.io/badge/code%20style-google-blueviolet.svg)](https://github.com/google/gts)
 ![npm](https://img.shields.io/npm/v/liquidcache)
 ![license](https://img.shields.io/github/license/FlaringPhoenix/LiquidCache)
@@ -52,6 +53,8 @@ cache.set('name', 'FlaringPhoenix', 5000);
 
 // After 5 seconds, 'name' will be automatically removed from the cache
 ```
+
+JSDoc is automatically generated with each release, see more [here](https://github.com/FlaringPhoenix/LiquidCache/blob/production/DOCS.md).
 
 ## Support
 
