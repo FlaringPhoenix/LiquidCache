@@ -3,7 +3,7 @@ version = 1
 test_patterns = ["test/*.ts"]
 
 [[analyzers]]
-name = "typescript"
+name = "javascript"
 enabled = true
 
   [analyzers.meta]
