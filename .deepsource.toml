@@ -8,5 +8,4 @@ enabled = true
   environment = ["mocha"]
 
 [[test_patterns]]
-pattern = ["test/*.ts"]
-name = "mocha"
+pattern = "test/*.ts"
